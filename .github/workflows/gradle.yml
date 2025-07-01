@@ -27,15 +27,7 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
-      name: Grant execute permission for gradlew
- Check failure on line 30 in .github/workflows/gradle.yml
-
-
-GitHub Actions
-/ Java CI with Gradle
-Invalid workflow file
-
-The workflow is not valid. .github/workflows/gradle.yml (Line: 30, Col: 7): 'name' is already defined .github/workflows/gradle.yml (Line: 31, Col: 7): Unexpected value 'run'
+    - name: Grant execute permission for gradlew
       run: chmod +x ./gradlew
     # Configure Gradle for optimal use in GitHub Actions, including caching of downloaded dependencies.
     # See: https://github.com/gradle/actions/blob/main/setup-gradle/README.md
